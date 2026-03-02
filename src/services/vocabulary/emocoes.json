@@ -1,0 +1,15 @@
+[
+  { "category": "emocoes", "type": "objeto", "name": "ansioso.jpg", "label": "Ansioso" },
+  { "category": "emocoes", "type": "objeto", "name": "bravo.jpg", "label": "Bravo" },
+  { "category": "emocoes", "type": "objeto", "name": "calmo relaxado.jpg", "label": "Calmo Relaxado" },
+  { "category": "emocoes", "type": "objeto", "name": "cansado.webp", "label": "Cansado" },
+  { "category": "emocoes", "type": "objeto", "name": "confuso.jpeg", "label": "Confuso" },
+  { "category": "emocoes", "type": "objeto", "name": "Entediado.webp", "label": "Entediado" },
+  { "category": "emocoes", "type": "objeto", "name": "feliz.webp", "label": "Feliz" },
+  { "category": "emocoes", "type": "objeto", "name": "medo.-assustadojpg.jpg", "label": "Medo/Assustado" },
+  { "category": "emocoes", "type": "objeto", "name": "orgulhoso.png", "label": "Orgulhoso" },
+  { "category": "emocoes", "type": "objeto", "name": "trsite.jpg", "label": "Triste" },
+  { "category": "emocoes", "type": "verbo", "name": "abraçar.jpg", "label": "Abraçar" },
+  { "category": "emocoes", "type": "verbo", "name": "conversar.jpg", "label": "Conversar" },
+  { "category": "emocoes", "type": "verbo", "name": "dormir.jpg", "label": "Dormir" }
+]

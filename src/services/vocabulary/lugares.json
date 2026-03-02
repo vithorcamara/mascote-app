@@ -1,0 +1,13 @@
+[
+  { "category": "lugares", "type": "objeto", "name": "banheiro.webp", "label": "Banheiro" },
+  { "category": "lugares", "type": "objeto", "name": "cozinha.webp", "label": "Cozinha" },
+  { "category": "lugares", "type": "objeto", "name": "farmacia.webp", "label": "Farmácia" },
+  { "category": "lugares", "type": "objeto", "name": "garagem.jpg", "label": "Garagem" },
+  { "category": "lugares", "type": "objeto", "name": "hospital.png", "label": "Hospital" },
+  { "category": "lugares", "type": "objeto", "name": "poste-de-saude.jpg", "label": "Posto de Saúde" },
+  { "category": "lugares", "type": "objeto", "name": "praça.jpg", "label": "Praça" },
+  { "category": "lugares", "type": "objeto", "name": "quarto.jpg", "label": "Quarto" },
+  { "category": "lugares", "type": "objeto", "name": "quintal.webp", "label": "Quintal" },
+  { "category": "lugares", "type": "objeto", "name": "sala.jpeg", "label": "Sala" },
+  { "category": "lugares", "type": "objeto", "name": "supermercado.webp", "label": "Supermercado" }
+]

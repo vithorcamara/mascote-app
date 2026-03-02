@@ -1,0 +1,52 @@
+.reload-prompt {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  margin: 16px;
+  padding: 16px;
+  border: 1px solid #8885;
+  border-radius: 8px;
+  z-index: 1000;
+  text-align: left;
+  box-shadow: 3px 4px 5px 0 #8885;
+  background-color: white;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  max-width: 300px;
+}
+
+.reload-prompt-message {
+  font-size: 14px;
+}
+
+.reload-prompt-buttons {
+  display: flex;
+  gap: 8px;
+  justify-content: flex-end;
+}
+
+.reload-prompt button {
+  padding: 6px 12px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  background-color: #f9f9f9;
+  font-size: 13px;
+}
+
+.reload-prompt-update {
+  background-color: #0bc5d8 !important;
+  color: white;
+  border-color: #0bc5d8 !important;
+  font-weight: bold;
+}
+
+.reload-prompt-update:hover {
+  background-color: #0aa3b3 !important;
+}
+
+.reload-prompt-close:hover {
+  background-color: #eee;
+}

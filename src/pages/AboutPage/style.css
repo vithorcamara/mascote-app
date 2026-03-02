@@ -1,0 +1,13 @@
+.phrase-display-container {
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  padding: 0.5rem;
+}
+
+.phrase-control-button {
+  margin-left: 1rem;
+}
+
+.phrase-control-button-small-margin {
+  margin-left: 0.5rem;
+}

@@ -1,0 +1,235 @@
+html {
+  font-size: 100%; /* Base for rem units: 1rem = 16px */
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  width: 100vw;
+  overflow-x: hidden;
+  background-color: #f0f2f5;
+}
+
+#root {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  width: 100vw;
+  position: relative;
+}
+
+.app-container::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 4rem;
+  width: 100vw;
+  background-color: white;
+  z-index: 50; /* Below hamburger and side menu */
+  transition: left 0.3s ease-in-out, width 0.3s ease-in-out;
+}
+
+/* Side Menu */
+.side-menu {
+  width: 12.5rem; /* 200px / 16 = 12.5rem */
+  background-color: #282c34;
+  padding: 1.25rem; /* 20px / 16 = 1.25rem */
+  color: white;
+  flex-shrink: 0;
+  position: fixed; /* Fix menu position */
+  height: 100vh; /* Use vh for full viewport height */
+  top: 0;
+  left: -15rem; /* 240px / 16 = 15rem */
+  transition: left 0.3s ease-in-out;
+  z-index: 999; /* Ensure menu is above main content */
+}
+
+.side-menu.menu-open {
+  left: 0; /* Slide in when open */
+}
+
+.side-menu ul {
+  list-style: none;
+  padding: 0;
+  padding-top: 4rem; /* Adjusted for hamburger button */
+}
+
+.side-menu li {
+  margin-bottom: 0.625rem; /* 10px / 16 = 0.625rem */
+}
+
+.side-menu a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem; /* Keep as rem/em */
+  display: block;
+  padding: 0.3125rem 0; /* 5px / 16 = 0.3125rem */
+}
+
+.side-menu a:hover {
+  text-decoration: underline;
+}
+
+/* Main Content */
+.main-content {
+  z-index: 1; /* Ensure main content is below the menu */
+  flex-grow: 1;
+  padding: 0rem; /* 20px / 16 = 1.25rem */
+  padding-top: 5rem; /* Reduced to start content closer to the header */
+  background-color: #f0f2f5;
+  color: #333;
+  margin-left: 0; /* Default position */
+  transition: margin-left 0.3s ease-in-out;
+  min-height: 100vh; /* Ensure main content takes at least full viewport height */
+  width: 100vw;
+}
+
+.menu-item-active {
+  font-weight: bold;
+}
+
+.user-icon-container {
+  position: fixed;
+  top: 1rem;
+  right: 2rem;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  background: #3344cc;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop_shadow(0 0 2em #61dafbaa);
+}
+
+/* ===== FAB CONTAINER ===== */
+.fab-wrapper {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  z-index: 9999;
+}
+
+/* ===== BOTÃO PRINCIPAL ===== */
+.fab-main {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  background: #303ab2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.25);
+  transition: transform 0.3s ease;
+  z-index: 1000;
+}
+
+.fab-main img {
+  width: 50px;
+  height: 50px;
+}
+
+/* ===== BOTÕES SECUNDÁRIOS ===== */
+.fab-action {
+  position: absolute;
+  bottom: 0;
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  border-color: #282c34;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 5px 12px rgba(0, 0, 0, 0.2);
+
+  /* Estado inicial */
+  transform: translateY(0);
+  opacity: 0;
+  pointer-events: none;
+
+  transition: 
+    transform 0.35s cubic-bezier(0.4, 0, 0.2, 1),
+    opacity 0.25s ease;
+}
+
+/* ===== ANIMAÇÃO AO ABRIR ===== */
+.fab-action.open {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* Distâncias diferentes para cada botão */
+.fab-action-1.open {
+  transform: translate(10px, -80px);
+  transition-delay: 0.2s;
+}
+
+.fab-action-2.open {
+  transform: translate(-50px, -60px);
+  transition-delay: 0.2s;
+}
+
+.fab-action-3.open {
+  transform: translateX(-75px);
+  transition-delay: 0.2s;
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+.react-icon{
+  color: black;
+}

@@ -1,0 +1,16 @@
+[
+  { "category": "acoes", "type": "objeto", "name": "bola", "label": "Bola" },
+  { "category": "acoes", "type": "objeto", "name": "caderno", "label": "Caderno" },
+  { "category": "acoes", "type": "objeto", "name": "caneta", "label": "Caneta" },
+  { "category": "acoes", "type": "objeto", "name": "telefone", "label": "Telefone" },
+  { "category": "acoes", "type": "verbo", "name": "brincar", "label": "Brincar" },
+  { "category": "acoes", "type": "verbo", "name": "jogar", "label": "Jogar" },
+  { "category": "acoes", "type": "verbo", "name": "escrever", "label": "Escrever" },
+  { "category": "acoes", "type": "verbo", "name": "ligar", "label": "Ligar" },
+  { "category": "acoes", "type": "verbo", "name": "ler", "label": "Ler" },
+  { "category": "acoes", "type": "verbo", "name": "correr", "label": "Correr" },
+  { "category": "acoes", "type": "verbo", "name": "cantar", "label": "Cantar" },
+  { "category": "acoes", "type": "verbo", "name": "assistir", "label": "Assistir" },
+  { "category": "acoes", "type": "objeto", "name": "livro", "label": "Livro" },
+  { "category": "acoes", "type": "objeto", "name": "televisao", "label": "Televisão" }
+]

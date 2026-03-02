@@ -1,0 +1,50 @@
+[
+  {
+    "name": "eu",
+    "label": "Eu",
+    "type": "pronoun",
+    "category": "pronomes"
+  },
+  {
+    "name": "voce",
+    "label": "Você",
+    "type": "pronoun",
+    "category": "pronomes"
+  },
+  {
+    "name": "ele",
+    "label": "Ele",
+    "type": "pronoun",
+    "category": "pronomes"
+  },
+  {
+    "name": "ela",
+    "label": "Ela",
+    "type": "pronoun",
+    "category": "pronomes"
+  },
+  {
+    "name": "nós",
+    "label": "Nós",
+    "type": "pronoun",
+    "category": "pronomes"
+  },
+  {
+    "name": "vocês",
+    "label": "Vocês",
+    "type": "pronoun",
+    "category": "pronomes"
+  },
+  {
+    "name": "eles",
+    "label": "Eles",
+    "type": "pronoun",
+    "category": "pronomes"
+  },
+  {
+    "name": "elas",
+    "label": "Elas",
+    "type": "pronoun",
+    "category": "pronomes"
+  }
+]

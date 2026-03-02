@@ -1,0 +1,8 @@
+[
+  { "name": "vestuario", "label": "Vestuário" },
+  { "name": "comida", "label": "Comida" },
+  { "name": "saude", "label": "Saúde" },
+  { "name": "acoes", "label": "Ações" },
+  { "name": "lugares", "label": "Lugares" },
+  { "name": "emocoes", "label": "Emoções" }
+]
