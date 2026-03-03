@@ -1,7 +1,7 @@
 .reload-prompt {
   position: fixed;
   right: 0;
-  bottom: 0;
+  top: 0;
   margin: 16px;
   padding: 16px;
   border: 1px solid #8885;
