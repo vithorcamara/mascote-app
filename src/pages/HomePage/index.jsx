@@ -97,7 +97,7 @@ export default function HomePage({ categoryName, currentPhrase, updatePhrase, te
             >
               <div className="pronoun-image-container">
                 <img
-                  src={`src/assets/vocabulary/pronomes/${pronoun.name}.png`}
+                  src={`/assets/vocabulary/pronomes/${pronoun.name}.png`}
                   alt={pronoun.label}
                   className="pronoun-image"
                   loading="lazy"
@@ -125,7 +125,7 @@ export default function HomePage({ categoryName, currentPhrase, updatePhrase, te
               className="verb-button"
             >
               <img
-                src={`src/assets/vocabulary/${verb.category}/${verb.name}`}
+                src={`/assets/vocabulary/${verb.category}/${verb.name}`}
                 alt={verb.label}
                 className="verb-image"
                 loading="lazy"
@@ -151,7 +151,7 @@ export default function HomePage({ categoryName, currentPhrase, updatePhrase, te
                 className="object-card"
               >
                 <img
-                  src={`src/assets/vocabulary/${item.category}/${item.name}`}
+                  src={`/assets/vocabulary/${item.category}/${item.name}`}
                   alt={item.label}
                   className="object-image"
                   loading="lazy"
