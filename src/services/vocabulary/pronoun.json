@@ -24,13 +24,13 @@
     "category": "pronomes"
   },
   {
-    "name": "nós",
+    "name": "nos",
     "label": "Nós",
     "type": "pronoun",
     "category": "pronomes"
   },
   {
-    "name": "vocês",
+    "name": "voces",
     "label": "Vocês",
     "type": "pronoun",
     "category": "pronomes"
