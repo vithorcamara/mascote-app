@@ -22,7 +22,7 @@
   { "category": "saude", "type": "verbo", "name": "ajuda.png", "label": "Ajudar" },
   { "category": "saude", "type": "verbo", "name": "chamar.jpg", "label": "Chamar" },
   { "category": "saude", "type": "verbo", "name": "deitar.webp", "label": "Deitar" },
-  { "category": "saude", "type": "verbo", "name": "dor.jpg", "label": "Dor" },
-  { "category": "saude", "type": "verbo", "name": "febre.jpg", "label": "Febre" },
-  { "category": "saude", "type": "verbo", "name": "tomaremedio.jpg", "label": "Tomar Remédio" }
+  { "category": "saude", "type": "objeto", "name": "dor.jpg", "label": "Dor" },
+  { "category": "saude", "type": "objeto", "name": "febre.jpg", "label": "Febre" },
+  { "category": "saude", "type": "verbo", "name": "tomar.jpg", "label": "Tomar" }
 ]

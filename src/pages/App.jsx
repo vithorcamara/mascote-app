@@ -51,7 +51,9 @@ export default function App() {
                 </button>
               </li>
             ))}
-
+            <br />
+            <hr width="80%" size="1" color="white" align="left"/>   
+            <br />
             {/* Outras páginas */}
             <li key="about">
               <button

@@ -12,9 +12,9 @@ export default defineConfig({
     injectRegister: false,
 
     manifest: {
-      name: 'MAsCoTe App',
-      short_name: 'MAsCoTe App',
-      description: 'MAsCoTe App',
+      name: 'MAsCoTe',
+      short_name: 'MAsCoTe',
+      description: 'MAsCoTe',
       theme_color: '#0bc5d8',
 
       icons: [{
