@@ -83,6 +83,12 @@ export default function HomePage({ categoryName, currentPhrase, updatePhrase, te
         >
           Futuro
         </button>
+        <button 
+          className={`tense-button ${tense === 'imperative' ? 'active' : ''}`}
+          onClick={() => setTense('imperative')}
+        >
+          Imperativo
+        </button>
       </div>
       
       {/* Carrossel de pronomes */}

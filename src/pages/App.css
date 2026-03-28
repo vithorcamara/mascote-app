@@ -250,3 +250,117 @@ html, body {
 .react-icon{
   color: black;
 }
+
+/* =========================
+   TTS MODAL (POPUP)
+========================= */
+
+.tts-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55);
+  backdrop-filter: blur(4px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10000;
+
+  animation: fadeIn 0.2s ease;
+}
+
+.tts-modal {
+  background: white;
+  border-radius: 24px;
+  padding: 20px;
+  width: 90%;
+  max-width: 360px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+
+  animation: scaleIn 0.2s ease;
+}
+
+.tts-modal h2 {
+  text-align: center;
+  margin: 0;
+  color: #303ab2;
+}
+
+/* Inputs */
+.tts-modal label {
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+  color: #333;
+}
+
+.tts-modal input,
+.tts-modal select {
+  margin-top: 5px;
+  padding: 6px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+/* Range estilizado */
+.tts-modal input[type="range"] {
+  accent-color: #0BC5D8;
+}
+
+/* Botões */
+.tts-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.tts-actions button {
+  flex: 1;
+  padding: 10px;
+  border-radius: 12px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  transition: transform 0.1s ease, opacity 0.2s;
+}
+
+/* Botão testar */
+.tts-actions button:first-child {
+  background: #0BC5D8;
+  color: white;
+}
+
+/* Botão fechar */
+.tts-actions button:last-child {
+  background: #e5e7eb;
+  color: #333;
+}
+
+/* Feedback */
+.tts-actions button:active {
+  transform: scale(0.95);
+}
+
+/* =========================
+   ANIMAÇÕES
+========================= */
+
+@keyframes fadeIn {
+  from { opacity: 0 }
+  to { opacity: 1 }
+}
+
+@keyframes scaleIn {
+  from {
+    transform: scale(0.9);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}

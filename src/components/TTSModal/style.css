@@ -1,0 +1,45 @@
+.tts-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.tts-modal {
+  background: white;
+  border-radius: 20px;
+  padding: 20px;
+  width: 90%;
+  max-width: 350px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.tts-modal h2 {
+  text-align: center;
+}
+
+.tts-modal label {
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+}
+
+.tts-modal input,
+.tts-modal select {
+  margin-top: 5px;
+}
+
+.tts-actions {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.tts-actions button {
+  flex: 1;
+}

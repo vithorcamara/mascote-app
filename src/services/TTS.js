@@ -5,25 +5,48 @@ class TalkTTS {
       rate: 1,
       pitch: 1,
       volume: 1,
-      interrupt: true, // cancela antes de falar
+      interrupt: true,
     };
 
     this.voice = null;
+    this.voices = [];
+
     this._loadVoices();
   }
 
   _loadVoices() {
     const load = () => {
-      const voices = window.speechSynthesis.getVoices();
-      this.voice = voices.find(v => v.lang === this.config.lang);
+      this.voices = window.speechSynthesis.getVoices();
+      this.voice =
+        this.voices.find(v => v.lang === this.config.lang) ||
+        this.voices[0];
     };
 
     load();
     window.speechSynthesis.onvoiceschanged = load;
   }
 
+  getVoices() {
+    return this.voices;
+  }
+
+  setVoiceByName(name) {
+    const voice = this.voices.find(v => v.name === name);
+    if (voice) this.voice = voice;
+  }
+
   configure(options = {}) {
     this.config = { ...this.config, ...options };
+
+    // salvar automaticamente
+    localStorage.setItem("tts-config", JSON.stringify(this.config));
+  }
+
+  loadSavedConfig() {
+    const saved = localStorage.getItem("tts-config");
+    if (saved) {
+      this.config = { ...this.config, ...JSON.parse(saved) };
+    }
   }
 
   speak(text) {
@@ -48,14 +71,6 @@ class TalkTTS {
 
   stop() {
     window.speechSynthesis.cancel();
-  }
-
-  pause() {
-    window.speechSynthesis.pause();
-  }
-
-  resume() {
-    window.speechSynthesis.resume();
   }
 }
 

@@ -33,7 +33,7 @@ const subjectsMap = {
 };
 
 export function conjugate(subject, verbInfinitive, tense = "present") {
-  if (!subject || !verbInfinitive) return verbInfinitive;
+  if (!subject || !verbInfinitive || tense == "imperative") return verbInfinitive;
 
   const subjectLower = subject.toLowerCase();
   const verbLower = verbInfinitive.toLowerCase().trim();
