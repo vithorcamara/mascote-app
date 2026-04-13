@@ -1,52 +1,78 @@
-.reload-prompt {
+.update-toast {
   position: fixed;
-  right: 0;
-  top: 0;
-  margin: 16px;
-  padding: 16px;
-  border: 1px solid #8885;
-  border-radius: 8px;
-  z-index: 1000;
-  text-align: left;
-  box-shadow: 3px 4px 5px 0 #8885;
-  background-color: white;
-  color: #333;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10000;
+
+  animation: slideUp 0.3s ease;
+}
+
+.update-content {
+  background: #1f2937;
+  color: white;
+  padding: 14px 18px;
+  border-radius: 16px;
+
   display: flex;
   flex-direction: column;
-  gap: 12px;
-  max-width: 300px;
+  gap: 10px;
+
+  box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+  min-width: 260px;
 }
 
-.reload-prompt-message {
+.update-text {
   font-size: 14px;
+  font-weight: 500;
 }
 
-.reload-prompt-buttons {
+.update-actions {
   display: flex;
   gap: 8px;
-  justify-content: flex-end;
+  align-items: center;
 }
 
-.reload-prompt button {
-  padding: 6px 12px;
-  border-radius: 4px;
-  border: 1px solid #ccc;
+.update-actions button {
+  border: none;
+  border-radius: 10px;
+  padding: 6px 10px;
   cursor: pointer;
-  background-color: #f9f9f9;
   font-size: 13px;
+  font-weight: 500;
+  transition: transform 0.1s ease, opacity 0.2s;
 }
 
-.reload-prompt-update {
-  background-color: #0bc5d8 !important;
+.update-actions button:active {
+  transform: scale(0.95);
+}
+
+/* Botões */
+.btn-update {
+  background: #0BC5D8;
   color: white;
-  border-color: #0bc5d8 !important;
-  font-weight: bold;
 }
 
-.reload-prompt-update:hover {
-  background-color: #0aa3b3 !important;
+.btn-reset {
+  background: #ef4444;
+  color: white;
 }
 
-.reload-prompt-close:hover {
-  background-color: #eee;
+.btn-close {
+  background: transparent;
+  color: #aaa;
+  font-size: 16px;
+  margin-left: auto;
+}
+
+/* animação */
+@keyframes slideUp {
+  from {
+    transform: translate(-50%, 40px);
+    opacity: 0;
+  }
+  to {
+    transform: translate(-50%, 0);
+    opacity: 1;
+  }
 }

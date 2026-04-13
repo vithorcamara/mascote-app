@@ -30,6 +30,7 @@ function ReloadPrompt() {
     setNeedRefresh(false)
   }
 
+  // 🔄 atualização normal
   const updateServiceWorker = () => {
     if (workbox) {
       workbox.addEventListener('controlling', () => {
@@ -39,26 +40,54 @@ function ReloadPrompt() {
     }
   }
 
+  // 🧹🔥 FORMATAÇÃO TOTAL + UPDATE
+  const hardReset = async () => {
+    try {
+      // remove todos os caches
+      const keys = await caches.keys()
+      await Promise.all(keys.map(key => caches.delete(key)))
+
+      // remove todos os service workers
+      const registrations = await navigator.serviceWorker.getRegistrations()
+      for (let reg of registrations) {
+        await reg.unregister()
+      }
+
+      // força reload (vai baixar tudo novo)
+      window.location.reload(true)
+    } catch (err) {
+      console.error('Erro ao resetar app:', err)
+    }
+  }
+
   if (!offlineReady && !needRefresh) return null
 
   return (
-    <div className="reload-prompt">
-      <div className="reload-prompt-message">
-        {offlineReady ? (
-          <span>O App está pronto para uso offline!</span>
-        ) : (
-          <span>Nova versão disponível. Clique em atualizar para carregar.</span>
-        )}
-      </div>
-      <div className="reload-prompt-buttons">
-        {needRefresh && (
-          <button className="reload-prompt-update" onClick={updateServiceWorker}>
-            Atualizar
+    <div className="update-toast">
+      <div className="update-content">
+
+        <div className="update-text">
+          {offlineReady
+            ? "App pronto para uso offline"
+            : "Nova versão disponível"}
+        </div>
+
+        <div className="update-actions">
+          {needRefresh && (
+            <button className="btn-update" onClick={updateServiceWorker}>
+              Atualizar
+            </button>
+          )}
+
+          <button className="btn-reset" onClick={hardReset}>
+            Formatar App
           </button>
-        )}
-        <button className="reload-prompt-close" onClick={close}>
-          Fechar
-        </button>
+
+          <button className="btn-close" onClick={close}>
+            ✕
+          </button>
+        </div>
+
       </div>
     </div>
   )
