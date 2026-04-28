@@ -19,7 +19,7 @@
   { "category": "comida", "type": "objeto", "name": "feijão_preto.png", "label": "Feijão Preto" },
   { "category": "comida", "type": "objeto", "name": "gelatina.png", "label": "Gelatina" },
   { "category": "comida", "type": "objeto", "name": "grao-de-bico.png", "label": "Grão de Bico" },
-  { "category": "comida", "type": "objeto", "name": "hamburguer.png", "label": "Hamburguer" },
+  { "category": "comida", "type": "objeto", "name": "hamburguer.png", "label": "Hambúrguer" },
   { "category": "comida", "type": "objeto", "name": "laranja.png", "label": "Laranja" },
   { "category": "comida", "type": "objeto", "name": "leite.png", "label": "Leite" },
   { "category": "comida", "type": "objeto", "name": "lentilha.png", "label": "Lentilha" },
@@ -54,6 +54,6 @@
   { "category": "comida", "type": "verbo", "name": "descarcar.jpg", "label": "Descascar" },
   { "category": "comida", "type": "verbo", "name": "lavar.jpg", "label": "Lavar" },
   { "category": "comida", "type": "verbo", "name": "cortar.webp", "label": "Cortar" },
-  { "category": "comida", "type": "verbo", "name": "gostou.png", "label": "Gostou" },
-  { "category": "comida", "type": "verbo", "name": "não-gostou.jpg", "label": "Não Gostou" }
+  { "category": "comida", "type": "verbo", "name": "gostou.png", "label": "Gostar" },
+  { "category": "comida", "type": "verbo", "name": "não-gostou.jpg", "label": "Não Gostar" }
 ]
