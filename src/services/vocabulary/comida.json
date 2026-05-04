@@ -55,5 +55,13 @@
   { "category": "comida", "type": "verbo", "name": "lavar.jpg", "label": "Lavar" },
   { "category": "comida", "type": "verbo", "name": "cortar.webp", "label": "Cortar" },
   { "category": "comida", "type": "verbo", "name": "gostou.png", "label": "Gostar" },
-  { "category": "comida", "type": "verbo", "name": "não-gostou.jpg", "label": "Não Gostar" }
+  { "category": "comida", "type": "verbo", "name": "não-gostou.jpg", "label": "Não Gostar" },
+  { "category": "comida", "type": "verbo", "name": "provar.png", "label": "Provar" },
+  { "category": "comida", "type": "verbo", "name": "cozinhar.png", "label": "Cozinhar" },
+  { "category": "comida", "type": "verbo", "name": "fritar.png", "label": "Fritar" },
+  { "category": "comida", "type": "verbo", "name": "assar.png", "label": "Assar" },
+  { "category": "comida", "type": "verbo", "name": "beber.png", "label": "Beber" },
+  { "category": "comida", "type": "verbo", "name": "servir.png", "label": "Servir" },
+  { "category": "comida", "type": "verbo", "name": "temperar.png", "label": "Temperar" },
+  { "category": "comida", "type": "objeto", "name": "bolo.png", "label": "Bolo" }
 ]

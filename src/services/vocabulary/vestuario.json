@@ -56,5 +56,14 @@
   { "category": "vestuario", "type": "verbo", "name": "guardar.jpg", "label": "Guardar" },
   { "category": "vestuario", "type": "verbo", "name": "escolher.jpg", "label": "Escolher" },
   { "category": "vestuario", "type": "verbo", "name": "costurar.jpg", "label": "Costurar" },
-  { "category": "vestuario", "type": "verbo", "name": "abotoar.webp", "label": "Abotoar" }
+  { "category": "vestuario", "type": "verbo", "name": "abotoar.webp", "label": "Abotoar" },
+  { "category": "vestuario", "type": "verbo", "name": "abrir.png", "label": "Abrir" },
+  { "category": "vestuario", "type": "verbo", "name": "ajeitar.png", "label": "Ajeitar" },
+  { "category": "vestuario", "type": "verbo", "name": "amarrar.png", "label": "Amarrar" },
+  { "category": "vestuario", "type": "verbo", "name": "calçar.png", "label": "Calçar" },
+  { "category": "vestuario", "type": "verbo", "name": "fechar.png", "label": "Fechar" },
+  { "category": "vestuario", "type": "verbo", "name": "lavar.png", "label": "Lavar" },
+  { "category": "vestuario", "type": "verbo", "name": "passar.png", "label": "Passar" },
+  { "category": "vestuario", "type": "verbo", "name": "provar.png", "label": "Provar" },
+  { "category": "vestuario", "type": "verbo", "name": "trocar.png", "label": "Trocar" }
 ]

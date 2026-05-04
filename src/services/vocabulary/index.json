@@ -4,5 +4,6 @@
   { "name": "saude", "label": "Saúde" },
   { "name": "acoes", "label": "Ações" },
   { "name": "lugares", "label": "Lugares" },
-  { "name": "emocoes", "label": "Emoções" }
+  { "name": "emocoes", "label": "Emoções" },
+  { "name": "casa", "label": "Casa" }
 ]

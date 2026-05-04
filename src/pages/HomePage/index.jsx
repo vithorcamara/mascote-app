@@ -41,8 +41,17 @@ export default function HomePage({ categoryName, currentPhrase, updatePhrase, te
   }, []);
 
   // Separação de objetos e verbos
-  const objects = items.filter(item => item.type === 'objeto')
-  const verbs = items.filter(item => item.type === 'verbo')
+  const objects = items
+  .filter(item => item.type === 'objeto')
+  .sort((a, b) =>
+    a.label.localeCompare(b.label, 'pt-BR', { sensitivity: 'base' })
+  );
+  
+  const verbs = items
+  .filter(item => item.type === 'verbo')
+  .sort((a, b) =>
+    a.label.localeCompare(b.label, 'pt-BR', { sensitivity: 'base' })
+  )
 
   const addToPhrase = (word, type) => {
     let finalWord = word;
