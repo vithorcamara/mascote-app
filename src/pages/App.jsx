@@ -14,7 +14,6 @@ export default function App() {
   const [selectedCategory, setSelectedCategory] = useState('')
   const [currentPage, setCurrentPage] = useState('home')
   const [currentPhrase, setCurrentPhrase] = useState('')
-  const [selectedTense, setSelectedTense] = useState('present')
   const [isFabOpen, setIsFabOpen] = useState(false)
 
   // ✅ NOVO: estado do modal TTS
@@ -27,7 +26,7 @@ export default function App() {
   }, [currentPhrase])
 
   useEffect(() => {
-    if (currentPhrase.trim().split(/\s+/).filter(Boolean).length >= 2) {
+    if (currentPhrase.trim().split(/\s+/).filter(Boolean).length >= 1) {
       setIsFabOpen(true)
     } else {
       setIsFabOpen(false)
@@ -91,11 +90,6 @@ export default function App() {
         </nav>
       </aside>
 
-      {/* Usuário */}
-      <div className="user-icon-container">
-        MG
-      </div>
-
       {/* Conteúdo */}
       <main className="main-content">
         {currentPage === 'about' && <AboutPage currentPhrase={currentPhrase} updatePhrase={setCurrentPhrase} />}
@@ -107,8 +101,6 @@ export default function App() {
             categoryName={selectedCategory || 'vestuario'} 
             currentPhrase={currentPhrase} 
             updatePhrase={setCurrentPhrase} 
-            tense={selectedTense}
-            setTense={setSelectedTense}
           />
         )}
       </main>

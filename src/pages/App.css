@@ -31,7 +31,6 @@ html, body {
   position: fixed;
   top: 0;
   left: 0;
-  height: 4rem;
   width: 100vw;
   background-color: white;
   z-index: 50; /* Below hamburger and side menu */
@@ -100,8 +99,7 @@ html, body {
 .main-content {
   z-index: 1; /* Ensure main content is below the menu */
   flex-grow: 1;
-  padding: 0rem; /* 20px / 16 = 1.25rem */
-  padding-top: 5rem; /* Reduced to start content closer to the header */
+  padding: 1.25rem 0; /* 20px / 16 = 1.25rem */
   background-color: #f0f2f5;
   color: #333;
   margin-left: 0; /* Default position */

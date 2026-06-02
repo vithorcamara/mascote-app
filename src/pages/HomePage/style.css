@@ -4,12 +4,10 @@
   margin: 0;
   display: flex;
   flex-direction: column;
-  gap: 1rem;
   padding: 0 0.5rem;
 }
 
 .phrase-section {
-  margin-bottom: 1rem;
   border: 1px solid #ccc;
   padding: 0.75rem;
   border-radius: 0.5rem;
@@ -26,28 +24,91 @@
   z-index: 10;
 }
 
-.tense-selector {
-  display: flex;
-  gap: 0.5rem;
-  margin-bottom: 1rem;
-  margin-top: 8rem;
+.spacer-tense-selector {
+  margin-top: 6rem;
 }
 
-.tense-button {
-  flex: 1;
-  padding: 0.5rem;
+/* Modal de Conjugação */
+.verb-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.verb-modal-content {
+  background: white;
+  padding: 2.5rem 2rem 2rem 2rem;
+  border-radius: 1rem;
+  width: 85%;
+  max-width: 350px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.2rem;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+  position: relative;
+}
+
+.modal-x-button {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  background: none;
+  border: none;
+  font-size: 2rem;
+  color: #3344cc;
+  cursor: pointer;
+  line-height: 1;
+  padding: 5px;
+}
+
+.modal-verb-image {
+  width: 10rem;
+  height: 10rem;
+  object-fit: cover;
+  border-radius: 1rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.modal-verb-label {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #3344cc;
+  margin: 0;
+  text-transform: capitalize;
+}
+
+.modal-tense-selector {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  width: 100%;
+}
+
+.modal-tense-selector button {
+  padding: 0.8rem;
   border-radius: 0.5rem;
-  border: 1px solid #3344cc;
+  border: 2px solid #3344cc;
   background: white;
   color: #3344cc;
   font-weight: bold;
   cursor: pointer;
+  font-size: 1rem;
   transition: all 0.2s;
+  width: 100%;
 }
 
-.tense-button.active {
+.modal-tense-selector button:active {
   background: #3344cc;
   color: white;
+  transform: scale(0.95);
 }
 
 .section-title {
@@ -164,6 +225,37 @@
   height: 6rem;
   object-fit: cover;
   border-radius: 0.5rem;
+}
+
+/* Conectivos */
+.connective-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  flex-shrink: 0;
+}
+
+.connective-box {
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  background: #f0f0f0;
+  border: 2px solid #3344cc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #3344cc;
+  font-weight: bold;
+  font-size: 1rem;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  transition: all 0.2s;
+  min-width: 4rem;
+}
+
+.connective-button:active .connective-box {
+  background: #3344cc;
+  color: white;
+  transform: scale(0.9);
 }
 
 .objects-grid-section {

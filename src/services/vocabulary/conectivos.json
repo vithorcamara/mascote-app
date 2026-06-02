@@ -1,0 +1,62 @@
+[
+  {
+    "name": "e",
+    "label": "e",
+    "type": "conectivo",
+    "category": "conectivos"
+  },
+  {
+    "name": "com",
+    "label": "com",
+    "type": "conectivo",
+    "category": "conectivos"
+  },
+  {
+    "name": "para",
+    "label": "para",
+    "type": "conectivo",
+    "category": "conectivos"
+  },
+  {
+    "name": "de",
+    "label": "de",
+    "type": "conectivo",
+    "category": "conectivos"
+  },
+  {
+    "name": "o",
+    "label": "o",
+    "type": "conectivo",
+    "category": "conectivos"
+  },
+  {
+    "name": "a",
+    "label": "a",
+    "type": "conectivo",
+    "category": "conectivos"
+  },
+  {
+    "name": "em",
+    "label": "em",
+    "type": "conectivo",
+    "category": "conectivos"
+  },
+  {
+    "name": "no",
+    "label": "no",
+    "type": "conectivo",
+    "category": "conectivos"
+  },
+  {
+    "name": "na",
+    "label": "na",
+    "type": "conectivo",
+    "category": "conectivos"
+  },
+  {
+    "name": "ou",
+    "label": "ou",
+    "type": "conectivo",
+    "category": "conectivos"
+  }
+]
